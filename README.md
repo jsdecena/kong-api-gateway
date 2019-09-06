@@ -1,3 +1,14 @@
+This is customized for multisys use. 
+
+To set up, from the root dir, run in the terminal:
+
+```
+docker-compose up -d --build
+
+```
+
+---
+
 ## More than just another GUI to [KONG Admin API](http://getkong.org)    [![Build Status](https://travis-ci.org/pantsel/konga.svg?branch=master)](https://travis-ci.org/pantsel/konga)    [![Gitter chat](https://badges.gitter.im/pantsel-konga/Lobby.png)](https://gitter.im/pantsel-konga/Lobby)
 
 
