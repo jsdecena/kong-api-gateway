@@ -18,7 +18,7 @@ services:
       POSTGRES_USER: kong
       POSTGRES_DB: kong
     ports:
-      - "5432:5432"
+      - "5433:5432"
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "kong"]
       interval: 5s
@@ -61,13 +61,13 @@ services:
       - kong-migration
       - kong-database
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://kong:8001"]
+      test: ["CMD", "curl", "-f", "http://kong:81"]
       interval: 5s
       timeout: 2s
       retries: 15
     ports:
-      - "8001:8001"
-      - "8000:8000"
+      - "81:8001"
+      - "80:8000"
 
   #######################################
   # Konga database prepare
