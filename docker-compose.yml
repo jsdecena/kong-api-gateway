@@ -67,7 +67,7 @@ services:
       retries: 15
     ports:
       - "81:8001"
-      - "80:8000"
+      - "82:8000"
 
   #######################################
   # Konga database prepare
