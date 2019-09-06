@@ -61,7 +61,7 @@ services:
       - kong-migration
       - kong-database
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://kong:81"]
+      test: ["CMD", "curl", "-f", "http://kong:8001"]
       interval: 5s
       timeout: 2s
       retries: 15
