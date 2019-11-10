@@ -1,5 +1,3 @@
-This is customized for multisys use. 
-
 To set up, from the root dir, run in the terminal:
 
 ```
